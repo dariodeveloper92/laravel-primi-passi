@@ -14,7 +14,7 @@
     <body>
         <div class="content">
             <div class="title m-b-md">
-                Home page
+                Contacts page
             </div>
 
             <div class="links">

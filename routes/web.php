@@ -13,6 +13,18 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return 'Hello World';
+// Rotta Home
+Route::get('/homepage', function () {
+    return view('home');
+    //return '<h1>Hello World</h1>';
+});
+
+// Rotta About
+Route::get('/about', function () {
+    return view('about');
+});
+
+// Rotta Contacts
+Route::get('/contacts', function () {
+    return view('contacts');
 });
