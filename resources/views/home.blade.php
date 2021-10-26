@@ -14,7 +14,14 @@
     <body>
         <div class="content">
             <div class="title m-b-md">
-                Home page
+                <h4>Home page</h4>
+                <h1> {{ $nome_corso }} </h1>
+                <h2>Lista Studenti: </h2>
+                <ul>
+                    @foreach($lista_studenti as $nome_studente)
+                    <li> {{ $nome_studente }} </li>
+                    @endforeach
+                </ul>
             </div>
 
             <div class="links">

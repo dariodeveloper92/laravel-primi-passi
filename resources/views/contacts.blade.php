@@ -14,7 +14,13 @@
     <body>
         <div class="content">
             <div class="title m-b-md">
-                Contacts page
+                <h4>Contacts page</h4>
+                <h2> Contatti: </h2>
+                <ul>
+                    @foreach($contatti as $indirizzi)
+                    <li> {{ $indirizzi }}</li>
+                    @endforeach
+                </ul>
             </div>
 
             <div class="links">

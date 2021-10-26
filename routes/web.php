@@ -15,17 +15,39 @@ use Illuminate\Support\Facades\Route;
 
 // Rotta Home
 Route::get('/homepage', function () {
-    return view('home');
+    $data = [
+        'nome_corso' => 'Boolean',
+        'lista_studenti' => [
+            'Marco Verdi',
+            'Carlo Bianchi',
+            'Luca Neri'
+        ]
+    ];
+    return view('home', $data);
     //return '<h1>Hello World</h1>';
     //rinomino la rotta
 })->name('homepage');
 
 // Rotta About
 Route::get('/about', function () {
-    return view('about');
+    $data = [
+        'info' => [
+            'studente',
+            'corso',
+            'struttura'
+        ]
+    ];
+    return view('about', $data);
 })->name('noi');
 
 // Rotta Contacts
 Route::get('/contacts', function () {
-    return view('contacts');
+    $data = [
+        'contatti' => [
+            'Telefono',
+            'Indirizzo',
+            'Maps'
+        ]
+    ];
+    return view('contacts', $data);
 })->name('contatti');
