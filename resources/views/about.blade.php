@@ -18,9 +18,10 @@
             </div>
 
             <div class="links">
-                <a href="/homepage">Homepage</a>
-                <a href="/about">About</a>
-                <a href="/contacts">Contacts</a>
+                <!-- richiamo il link della Route -->
+                <a href=" {{ route('homepage') }}">Homepage</a>
+                <a href="{{ route('noi') }}">About</a>
+                <a href="{{ route('contatti') }}">Contacts</a>
             </div>
         </div>
     </body>
