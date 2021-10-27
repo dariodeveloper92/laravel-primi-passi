@@ -14,7 +14,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 // Rotta Home
-Route::get('/homepage', function () {
+Route::get('/', function () {
     $data = [
         'nome_corso' => 'Boolean',
         'lista_studenti' => [
